@@ -1,0 +1,361 @@
+
+==================== FINAL INTERFACE ====================
+2015-11-22 19:42:03.788101 UTC
+
+interface main@main:Main 7102
+  interface hash: 6190945f99973be3f8d620316b1d737c
+  ABI hash: 453ac42e1b13d20b7cc15e2a8b709f20
+  export-list hash: 8df4a5275739f9d6bf80315cb0e9ca4d
+  orphan hash: be99bb11c8522e098bafa67cf8f3a0ac
+  flag hash: 6724ef30ca0545c9e73fe5fb0ae9a940
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.extractAttrs
+  Main.htmlFiles
+  Main.main
+  Main.parseHtmlFile
+  Main.streamToList
+  Main.testy
+module dependencies:
+package dependencies: ansi-terminal-0.6.2.3@ansit_KW0LUY2zB7JCYzE4ZYrwBg
+                      ansi-wl-pprint-0.6.7.3@ansiw_KPlSW7tbqXS51Lj59n3FC4
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      async-2.0.2@async_J3wPtBMkDlC1zlPIsbgEk9 base-4.8.1.0
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj
+                      comonad-4.2.7.2@comon_EsayKmuIGPJJdbMoBEcxRq
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      directory-1.2.2.0@direc_KowvXytSqazBcvN7MGpFtg
+                      distributive-0.4.4@distr_IiTFZxvjHzA0FvKz3AU35Q
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A
+                      foldl-1.1.2@foldl_GFepOEYcDXy2gHwsLugSYS ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy
+                      hostname-1.0@hostn_6gCWaeFqrrdGhpJ9RO9xHy integer-gmp-1.0.0.0
+                      managed-1.0.1@manag_9cChjqNPwxJIbnqjLoTjVI
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      mwc-random-0.13.3.2@mwcra_0iGmPos4Pta2ISXJLjBtd8
+                      optional-args-1.0.0@optio_8L8oRVwhSQQARa8MEcXr9l
+                      optparse-applicative-0.11.0.2@optpa_3fo2u0lEaJi24NRYVDocaN
+                      primitive-0.6.1.0@primi_5Jnw7oEuYtM9dmKXelGXVb
+                      process-1.2.3.0@proce_FLTz0SLwyG6LJUpZ52HjkU
+                      profunctors-5.1.1@profu_IRUD0QFY0OF0nZWAglFFc5
+                      semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      system-filepath-0.4.13.4@syste_2SzVkwMcB0z2zba4qxCrKf
+                      system-fileio-0.3.16.3@syste_CHtYiGUR3pL90kk42zWp3i
+                      tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW
+                      tagsoup-0.13.3@tagso_ImwiOxTXDQzEs0zEAu9cq0
+                      temporary-1.2.0.3@tempo_Il0r9HZboDhGin7P716nyP
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      turtle-1.2.2@turtl_LDszoiFD6D5J0yb69GaNdc
+                      unix-2.7.1.0@unix_A3WgcI5QiHK4PDo4jSYdwQ
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         system-filepath-0.4.13.4@syste_2SzVkwMcB0z2zba4qxCrKf:Filesystem.Path
+         system-filepath-0.4.13.4@syste_2SzVkwMcB0z2zba4qxCrKf:Filesystem.Path.CurrentOS
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj:System.Clock
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         mwc-random-0.13.3.2@mwcra_0iGmPos4Pta2ISXJLjBtd8:System.Random.MWC
+                         primitive-0.6.1.0@primi_5Jnw7oEuYtM9dmKXelGXVb:Control.Monad.Primitive
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.List.NonEmpty
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.Semigroup
+                         tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW:Data.Tagged
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.IO d541b8bdf18c04de3ab7ea0277c4eba3
+import  -/  foldl-1.1.2@foldl_GFepOEYcDXy2gHwsLugSYS:Control.Foldl 54f1c8b9a70c51878614e201db157a11
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  system-filepath-0.4.13.4@syste_2SzVkwMcB0z2zba4qxCrKf:Filesystem.Path.Internal 779a3cef1ab89a74f7d057b9722beacb
+import  -/  tagsoup-0.13.3@tagso_ImwiOxTXDQzEs0zEAu9cq0:Text.HTML.TagSoup f6f92b48bce3ae06bea19cda7a50c3d6
+import  -/  tagsoup-0.13.3@tagso_ImwiOxTXDQzEs0zEAu9cq0:Text.HTML.TagSoup.Parser a77e2e0bef46c2115ca50e45bc2d6b47
+import  -/  tagsoup-0.13.3@tagso_ImwiOxTXDQzEs0zEAu9cq0:Text.HTML.TagSoup.Type 10ab5e42b8a3e1e2a31536a6989949c1
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.IO bc20a8a616680131177d813d1b88571a
+import  -/  text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Internal 9aaf446b91649c416d85a19f08d51f8e
+import  -/  turtle-1.2.2@turtl_LDszoiFD6D5J0yb69GaNdc:Turtle f20625eb7a09056dde583ae03364c4ad
+import  -/  turtle-1.2.2@turtl_LDszoiFD6D5J0yb69GaNdc:Turtle.Pattern 6d5bd273503f9974f4e7c08e7a386120
+import  -/  turtle-1.2.2@turtl_LDszoiFD6D5J0yb69GaNdc:Turtle.Prelude a1fc43e89af5f7927e7f03459ee8bd62
+import  -/  turtle-1.2.2@turtl_LDszoiFD6D5J0yb69GaNdc:Turtle.Shell 194d9bfd12534683f32f5bfba35b7121
+d3ea2b1049f0e7ed74ad8d03adc1cefe
+  extractAttrs ::
+    [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]
+    -> [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ x :: [Text.HTML.TagSoup.Type.Tag
+                           Data.Text.Internal.Text] ->
+                 Main.extractAttrs_go x) -}
+47d6aaa9cf235afec1a316d530ebf33f
+  extractAttrs_go ::
+    [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]
+    -> [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <S,1*U> -}
+b51d485b61563a49119acbec47074ee8
+  htmlFiles :: Turtle.Shell.Shell Filesystem.Path.Internal.FilePath
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                Main.htmlFiles1
+                  `cast`
+                (Trans
+                     (forall r.
+                      <Control.Foldl.FoldM
+                         GHC.Types.IO Filesystem.Path.Internal.FilePath r>_R
+                      ->_R Sym (GHC.Types.NTCo:IO[0] <r>_R))
+                     (Sym (Turtle.Shell.NTCo:Shell[0]
+                               <Filesystem.Path.Internal.FilePath>_R))) -}
+49c233591e715790a1d389c8dfb9f493
+  htmlFiles1 ::
+    Control.Foldl.FoldM
+      GHC.Types.IO Filesystem.Path.Internal.FilePath r
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, r #)
+  {- Arity: 2,
+     Unfolding: (Turtle.Prelude.find1
+                   @ Data.Text.Internal.Text
+                   Main.htmlFiles4
+                     `cast`
+                   (Trans
+                        (Sym (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                                  <Data.Text.Internal.Text>_N <[]>_R <Data.Text.Internal.Text>_N))
+                        (Sym (Turtle.Pattern.NTCo:Pattern[0]) <Data.Text.Internal.Text>_N))
+                   Main.htmlFiles2) -}
+ab6798db376f9d335a82e043bb7f6c75
+  htmlFiles2 :: Filesystem.Path.Internal.FilePath
+  {- Unfolding: (case Filesystem.Path.CurrentOS.$w$cfromString
+                        Main.htmlFiles3 of ww { (#,,,#) ww1 ww2 ww3 ww4 ->
+                 Filesystem.Path.Internal.FilePath ww1 ww2 ww3 ww4 }) -}
+8207a7ff0880bc5ee1e42eb0fd7a7b8f
+  htmlFiles3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "."#) -}
+d4f9f456685939db6891dfb01d4b5fbc
+  htmlFiles4 ::
+    Data.Text.Internal.Text
+    -> [(Data.Text.Internal.Text, Data.Text.Internal.Text)]
+  {- Arity: 1,
+     Unfolding: (Turtle.Pattern.has1
+                   @ Data.Text.Internal.Text
+                   Main.htmlFiles5) -}
+20f60d5b95e708ba5bea85a3a6dd6c2f
+  htmlFiles5 :: Turtle.Pattern.Pattern Data.Text.Internal.Text
+  {- Unfolding: (Turtle.Pattern.$w$cfromString
+                   @ Data.Text.Internal.Text
+                   Main.htmlFiles7
+                   Main.htmlFiles6) -}
+944e03058d0c31014d8c5c71f941143e
+  htmlFiles6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ".html"#) -}
+5e6bb6461b2437476ce35309398a9227
+  htmlFiles7 :: Data.Text.Internal.Text ~ Data.Text.Internal.Text
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ Data.Text.Internal.Text
+                   @ Data.Text.Internal.Text
+                   @~ <Data.Text.Internal.Text>_N) -}
+d485db14859adc5f3ad599b148e118cc
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+148119d207ab5e52008da6e2965863f2
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Main.main3
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Data.Text.IO.getContents2 ipv1 ipv of ds { (#,#) ipv2 ipv3 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (GHC.Show.showList__
+                      @ Data.Text.Internal.Text
+                      Data.Text.Show.$fShowText1
+                      (Main.main_go (Main.main2 ipv3))
+                      (GHC.Types.[] @ GHC.Types.Char))
+                   GHC.Types.True
+                   ipv2 } }) -}
+49a46e921fd5ae76ca361f4e49b1da7b
+  main2 ::
+    Data.Text.Internal.Text
+    -> [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]
+  {- Unfolding: (Text.HTML.TagSoup.Parser.parseTags
+                   @ Data.Text.Internal.Text
+                   Text.StringLike.$fStringLikeText0) -}
+cfbfcb64de99ec17d93f56204d6dbb43
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "./test.html"#) -}
+37e10e7714902ac5591a83b1711d61c8
+  main4 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+cf4214598362288d3bc844657d06acc7
+  main_go ::
+    [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]
+    -> [Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <S,1*U> -}
+6f0dcf115921c261ca99d9fcbc9ef6d9
+  parseHtmlFile ::
+    GHC.Types.IO [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.parseHtmlFile1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <[Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text]>_R)) -}
+706ff68f44385479794c8938248d755c
+  parseHtmlFile1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [Text.HTML.TagSoup.Type.Tag Data.Text.Internal.Text] #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.IO.Handle.FD.openFile1
+                        Main.main3
+                        GHC.IO.IOMode.ReadMode
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Data.Text.IO.getContents2 ipv1 ipv of ds { (#,#) ipv2 ipv3 ->
+                 (# ipv2, Main.main2 ipv3 #) } }) -}
+c21b71aed37d7ff8e6c06ca3a885bce8
+  streamToList :: Turtle.Shell.Shell a -> GHC.Types.IO [a]
+  {- Arity: 1, HasNoCafRefs, Strictness: <C(S),1*C1(U)>,
+     Unfolding: (\ @ a1 stream :: Turtle.Shell.Shell a1 ->
+                 stream `cast` (Turtle.Shell.NTCo:Shell[0] <a1>_R)
+                   @ [a1]
+                   (Main.streamToList1 @ a1)) -}
+735060196744737e26b0d5112d0873e8
+  streamToList1 :: Control.Foldl.FoldM GHC.Types.IO a [a]
+  {- HasNoCafRefs,
+     Unfolding: (\ @ a1 ->
+                 Control.Foldl.FoldM
+                   @ GHC.Types.IO
+                   @ a1
+                   @ [a1]
+                   @ ([a1] -> [a1])
+                   (Main.streamToList4 @ a1)
+                     `cast`
+                   (<[a1] -> [a1]>_R
+                    ->_R <a1>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <[a1] -> [a1]>_R))
+                   (Main.streamToList3 @ a1)
+                     `cast`
+                   (Sym (GHC.Types.NTCo:IO[0] <[a1] -> [a1]>_R))
+                   (Main.streamToList2 @ a1)
+                     `cast`
+                   (<[a1] -> [a1]>_R ->_R Sym (GHC.Types.NTCo:IO[0] <[a1]>_R))) -}
+473eef544e2c50e0b447bd508a312428
+  streamToList2 ::
+    ([a] -> [a])
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] #)
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   x1 :: [a1] -> [a1]
+                   s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s1, x1 (GHC.Types.[] @ a1) #)) -}
+355413b3a106aabf5648a237647b795d
+  streamToList3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] -> [a] #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s1, GHC.Base.id @ [a1] #)) -}
+695f87de0148fe0d12de14bb1f943b28
+  streamToList4 ::
+    ([a] -> [a])
+    -> a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a] -> [a] #)
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   x1 :: [a1] -> [a1]
+                   a11 :: a1
+                   s1 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s1, \ x2 :: [a1] -> x1 (GHC.Types.: @ a1 a11 x2) #)) -}
+5554e8d28e57a05760af5b892ba268bd
+  testy :: GHC.Types.IO [Filesystem.Path.Internal.FilePath]
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.testy1
+                  `cast`
+                (Sym (GHC.Types.NTCo:IO[0]
+                          <[Filesystem.Path.Internal.FilePath]>_R)) -}
+dd107d7b364874816948655552ad4f04
+  testy1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          [Filesystem.Path.Internal.FilePath] #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (Main.streamToList
+                    @ Filesystem.Path.Internal.FilePath
+                    Main.htmlFiles1
+                      `cast`
+                    (Trans
+                         (forall r.
+                          <Control.Foldl.FoldM
+                             GHC.Types.IO Filesystem.Path.Internal.FilePath r>_R
+                          ->_R Sym (GHC.Types.NTCo:IO[0] <r>_R))
+                         (Sym (Turtle.Shell.NTCo:Shell[0]
+                                   <Filesystem.Path.Internal.FilePath>_R))))
+                   `cast`
+                 (GHC.Types.NTCo:IO[0] <[Filesystem.Path.Internal.FilePath]>_R)
+                   s) -}
+"SPEC/Main fromString @ FilePath" [ALWAYS] forall tpl2 :: Data.String.IsString
+                                                            Filesystem.Path.Internal.FilePath
+  Data.String.fromString @ Filesystem.Path.Internal.FilePath tpl2
+  = Filesystem.Path.CurrentOS.$fIsStringFilePath_$cfromString
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

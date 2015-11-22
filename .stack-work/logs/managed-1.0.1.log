@@ -1,0 +1,18 @@
+Configuring managed-1.0.1...
+Building managed-1.0.1...
+Preprocessing library managed-1.0.1...
+[1 of 2] Compiling Control.Monad.Managed ( src/Control/Monad/Managed.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Control/Monad/Managed.o )
+
+src/Control/Monad/Managed.hs:91:1: Warning:
+    The import of ‘<*>, pure, Applicative’
+    from module ‘Control.Applicative’ is redundant
+
+src/Control/Monad/Managed.hs:93:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[2 of 2] Compiling Control.Monad.Managed.Safe ( src/Control/Monad/Managed/Safe.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.4.0/build/Control/Monad/Managed/Safe.o )
+In-place registering managed-1.0.1...
+Installing library in
+/home/davy/.stack/snapshots/x86_64-linux/lts-3.9/7.10.2/lib/x86_64-linux-ghc-7.10.2/managed-1.0.1-9cChjqNPwxJIbnqjLoTjVI
+Registering managed-1.0.1...
