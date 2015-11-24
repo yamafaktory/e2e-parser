@@ -3,30 +3,29 @@
 module Main where
 
 import qualified Control.Foldl as Fold
-import qualified Data.Text.IO as TIO
+import qualified Data.Foldable as F
+import qualified Data.Text.IO  as TIO
 import Text.HTML.TagSoup
 import Turtle
 
 streamToList :: Shell a -> IO [a]
 streamToList stream = fold stream Fold.list
 
-htmlFiles :: Shell Turtle.FilePath
-htmlFiles = find (has ".html") "."
+fileStream :: Shell Turtle.FilePath
+fileStream = find (has ".html") "."
 
-test :: IO [Turtle.FilePath]
-test = do
-  files <- streamToList htmlFiles
-  return files
+fileList :: IO [Turtle.FilePath]
+fileList = streamToList fileStream
 
-parseHtmlFile :: IO [Tag Text]
-parseHtmlFile = do
-  tags <- parseTags <$> TIO.readFile "./test.html"
-  return tags
+parseHtmlFile file = parseTags <$> TIO.readFile file
 
 extractAttrs :: [Tag Text] -> [Text]
 extractAttrs = filter (/= "") . map (fromAttrib "data-e2e") . filter isTagOpen
 
-main :: IO ()
+report :: Prelude.FilePath -> IO [Text]
+report file = extractAttrs <$> (parseHtmlFile file)
+
 main = do
-  attrs <- extractAttrs <$> parseHtmlFile
-  print attrs
+  files <- fileList
+  --F.forM_ files report
+  view (select files)
