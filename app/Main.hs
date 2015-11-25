@@ -11,8 +11,16 @@ import Turtle
 streamToList :: Shell a -> IO [a]
 streamToList stream = fold stream Fold.list
 
+countStream :: MonadIO io => Shell a -> io Int
+countStream stream = fold stream Fold.length
+
 fileStream :: Shell Turtle.FilePath
 fileStream = find (has ".html") "."
+
+test :: Monad m => m Turtle.FilePath -> m Text
+test file = do
+  Right a <- fmap toText file
+  return a
 
 fileList :: IO [Turtle.FilePath]
 fileList = streamToList fileStream
@@ -27,5 +35,7 @@ report file = extractAttrs <$> (parseHtmlFile file)
 
 main = do
   files <- fileList
-  --F.forM_ files report
-  view (select files)
+  --echo $ mapM test files
+  --F.forM_ files $ \f -> do
+    --print f
+  view (test fileStream)
