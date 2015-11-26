@@ -2,11 +2,12 @@
 
 module Main where
 
-import qualified Control.Foldl as Fold
-import qualified Data.Foldable as F
-import qualified Data.Text.IO  as TIO
-import Text.HTML.TagSoup
-import Turtle
+import qualified Control.Foldl     as Fold
+import qualified Data.Foldable     as F
+import qualified Data.Text.IO      as TIO
+import qualified Data.Text         as T
+import           Text.HTML.TagSoup
+import           Turtle
 
 streamToList :: Shell a -> IO [a]
 streamToList stream = fold stream Fold.list
@@ -25,6 +26,7 @@ test file = do
 fileList :: IO [Turtle.FilePath]
 fileList = streamToList fileStream
 
+parseHtmlFile :: Prelude.FilePath -> IO [Tag Text]
 parseHtmlFile file = parseTags <$> TIO.readFile file
 
 extractAttrs :: [Tag Text] -> [Text]
@@ -34,8 +36,10 @@ report :: Prelude.FilePath -> IO [Text]
 report file = extractAttrs <$> (parseHtmlFile file)
 
 main = do
-  files <- fileList
-  --echo $ mapM test files
-  --F.forM_ files $ \f -> do
-    --print f
-  view (test fileStream)
+  files <- fmap test fileList
+  print "------------------"
+  F.forM_ files $ \f -> do
+    print f
+    r <- report $ T.unpack $ f
+    print r
+    print "-----"
