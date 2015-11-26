@@ -1,72 +1,18 @@
-<div class="sections {{numPanels}}">
-    <div class="panel unit">
-        <a ng-href="{{helper.url('unit')}}"
-           ng-attr-title="{{helper.localize('My flat')}}"
-           data-e2e="{:type tile :as unit}">
-            <div>
-                <h2 localize="My flat"></h2>
-                <div localize>Manuals, maintenance information and services for all appliances, parts and keys of your flat.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel project">
-        <a ng-href="{{helper.url('project')}}"
-           ng-attr-title="{{projectName}}"
-           data-e2e="{:type tile :as articles}">
-            <div>
-                <h2>{{projectName}}</h2>
-                <div localize>Everything about Erlenmatt residential area: emergency numbers, opening times, public infrastructure, and much more: sorted from A-Z.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel living-services"
-         ng-if="helper.config('livingServicesGroupId') && user.group.id === helper.config('livingServicesGroupId')">
-        <a ng-href="{{helper.config('urls').livingServices}}"
-           ng-attr-title="{{helper.localize('Living services')}}" target="_blank">
-            <div>
-                <h2 localize="Living services"></h2>
-                <div localize>Your personal Service package, that you could use as you wish.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel helpdesk">
-        <a ng-href="{{helper.url('helpdesk')}}"
-           ng-attr-title="{{helper.localize('Service Center')}}"
-           data-e2e="{:type tile :as helpdesk}">
-            <div>
-                <h2 localize="Service Center"></h2>
-                <div localize>Your direct communication channel with your real estate services company.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel community">
-        <a ng-href="{{helper.url('community-articles')}}"
-           ng-attr-title="{{helper.localize('News stream')}}"
-           data-e2e="{:type tile :as community-articles}">
-            <div>
-                <h2 localize="News stream"></h2>
-                <div localize>Check out the Erlenmatt news stream to stay up-to-date about our community - and post your ideas, suggestions here.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel consumption">
-        <a ng-href="{{helper.url('consumption')}}"
-           ng-attr-title="{{helper.localize('Energy consumption')}}"
-           data-e2e="{:type tile :as consumption}">
-            <div>
-                <h2 localize="Energy consumption"></h2>
-                <div localize>Your energy consumption is slightly above the average.</div>
-            </div>
-        </a>
-    </div>
-    <div class="panel clipboard">
-        <a ng-href="{{helper.url('clipboard')}}"
-           ng-attr-title="{{helper.localize('Thing board')}}"
-           data-e2e="{:type tile :as clipboard}">
-            <div>
-                <h2 localize="Thing board"></h2>
-                <div localize>Lend, borrow, sell and buy useful and funny things within the erlenmatt community.</div>
-            </div>
-        </a>
-    </div>
-</div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <meta name="description" content="test">
+        <meta name="author" content="yamafaktory">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <article>
+            <h1 data-e2e="{:type title}">Title</h1>
+            <p data-e2e="{:type content}"></p>
+            <button data-e2e="{:type button :as go}">Go</button>
+        </article>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
