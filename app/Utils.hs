@@ -21,13 +21,13 @@ countStream stream = fold stream Fold.length
 extractAttrs :: [Tag Text] -> [Text]
 extractAttrs = filter (/= "") . map (fromAttrib "data-e2e") . filter isTagOpen
 
-fileList :: IO [Turtle.FilePath]
-fileList = streamToList (fileStream ".")
+fileList :: Turtle.FilePath -> IO [Turtle.FilePath]
+fileList path = streamToList (fileStream path)
 
 filePathToText :: Monad m => m Turtle.FilePath -> m Text
 filePathToText file = do
-  Right a <- toText <$> file
-  return a
+  Right rendertext <- toText <$> file
+  return rendertext
 
 fileStream :: Turtle.FilePath -> Shell Turtle.FilePath
 fileStream path = find (has ".html") path
