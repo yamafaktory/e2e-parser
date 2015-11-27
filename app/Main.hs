@@ -15,11 +15,12 @@ main = do
   let textFilesPath = fromText filesPath
   if T.length filesPath > 0 then do
     files <- U.filePathToText <$> U.fileList textFilesPath
-    let ret = T.replicate 60 $ T.pack "-"
+    let ret = T.replicate 30 $ T.pack "- "
     echo $ ret
     F.forM_ files $ \file -> do
       echo $ format (w%"\n") file
       result <- U.report $ T.unpack $ file
+      echo $ format ("Found "%d%" data attribute(s)") (length result)
       F.forM_ result $ \tag -> do
         echo $ format ("-> "%s) tag
       echo $ ret
