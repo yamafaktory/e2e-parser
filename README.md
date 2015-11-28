@@ -1,6 +1,6 @@
 # e2e-parser [![Build Status](https://travis-ci.org/yamafaktory/e2e-parser.svg?branch=master)](https://travis-ci.org/yamafaktory/e2e-parser)
 
-> A small Haskell utility that parses HTML files under a given path looking for data-e2e attributes and outputs a report.
+> A small Haskell shell utility that parses HTML files under a given path looking for data-e2e attributes and outputs a report.
 
 In the end-to-end testing world, it is considered best practice to avoid using CSS ids or classes. In order to keep a clear separation of concerns in the HTML templates of your applications, specific data attributes must be, when possible, implemented. I personnaly use *data-e2e* attributes to manage my tests.
 
@@ -11,6 +11,8 @@ stack install
 ```
 
 # Usage
+
+Execute this command in your terminal:
 
 ```bash
 ./e2e-parser-exe
@@ -41,6 +43,9 @@ Found 2 data attribute(s)
 -> {:type item-2}
 ------------------------------------------------------------
 ```
+# Haskell packages
+
+This project relies on the [turtle package](https://hackage.haskell.org/package/turtle) for the shell integration and on the [tagsoup package](https://hackage.haskell.org/package/tagsoup) for the HTML parsing part.
 
 # Licence
 
