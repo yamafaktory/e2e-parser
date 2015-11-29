@@ -24,10 +24,8 @@ extractAttrs = filter (/= "") . map (fromAttrib "data-e2e") . filter isTagOpen
 fileList :: Turtle.FilePath -> IO [Turtle.FilePath]
 fileList path = streamToList (fileStream path)
 
-filePathToText :: Monad m => m Turtle.FilePath -> m Text
-filePathToText file = do
-  Right rendertext <- toText <$> file
-  return rendertext
+filePathToText :: Functor f => f Turtle.FilePath -> f Text
+filePathToText file = format fp <$> file
 
 fileStream :: Turtle.FilePath -> Shell Turtle.FilePath
 fileStream path = find (has ".html") path
