@@ -1,14 +1,15 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Utils ( countStream
-             , extractAttrs
-             , fileList
-             , filePathToText
-             , fileStream
-             , parseHtmlFile
-             , report
-             , streamToList
-             ) where
+module Utils
+    ( countStream
+    , extractAttrs
+    , fileList
+    , filePathToText
+    , fileStream
+    , parseHtmlFile
+    , report
+    , streamToList
+    ) where
 
 import qualified Control.Foldl     as Fold
 import qualified Data.Text.IO      as TIO

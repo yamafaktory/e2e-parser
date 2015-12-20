@@ -1,5 +1,5 @@
 name:                e2e-parser
-version:             0.1.0.0
+version:             1.0.0
 synopsis:            E2E data attributes parser
 description:         Please see README.md
 homepage:            http://github.com/yamafaktory/e2e-parser
@@ -15,7 +15,7 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Utils
   build-depends:       base
                      , foldl >= 1.1.2
                      , tagsoup >= 0.13.3
