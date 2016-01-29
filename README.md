@@ -47,6 +47,6 @@ Found 2 data attribute(s)
 
 This project relies on the [turtle package](https://hackage.haskell.org/package/turtle) for the shell integration and on the [tagsoup package](https://hackage.haskell.org/package/tagsoup) for the HTML parsing part.
 
-# Licence
+# License
 
 Released under the [BSD-3 license](https://opensource.org/licenses/BSD-3-Clause).
